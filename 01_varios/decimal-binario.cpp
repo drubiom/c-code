@@ -17,7 +17,6 @@ int main(){
     while (ndecimal!=0){
     printf("\nIntroduce un numero:");
     scanf("%i",&ndecimal);
-    printf("El número en binario es:");
     bin(ndecimal);
     }
     return EXIT_SUCCESS;
