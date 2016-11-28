@@ -5,37 +5,42 @@ int main(){
     int i, o1, o2;
     char op, aux;
     system("clear");
-    for(i=0;i<50;i++){
-        printf("-");
-      }
-    printf("\n Bienvenido a una calculadora básica \n");
-    for(i=0;i<50;i++){
-        printf("-");
-      }
+    system("toilet --gay --fblocks CALCULADORA BÁSICA");
 
     printf("\nIntroduce el primer número:");
     scanf(" %i", &o1);
     printf("\n Introduce el segundo número:");
     scanf(" %i", &o2);
-    printf("\n Indica la operación que quieres realizar (+,-,*,/,1(cuadrado)):");
+    printf("\n Indica la operación que quieres realizar: ");
+    printf("\n\t 1.-SUMA");
+    printf("\n\t 2.-RESTA");
+    printf("\n\t 3.-MULTIPLICACIÓN");
+    printf("\n\t 4.-DIVISIÓN");
+    printf("\n\t 5.-CUADRADO");
     scanf(" %c", &op);
     do{
       switch(op){
-          case '+': printf("\n Suma de %i + %i = %i", o1, o2, o1+o2);
+          case '1': printf("\n Suma de %i + %i = %i", o1, o2, o1+o2);
                     break;
-          case '-': printf("\n Resta de %i - %i = %i", o1, o2, o1-o2);
+          case '2': printf("\n Resta de %i - %i = %i", o1, o2, o1-o2);
                     break;
-          case '*': printf("\n Multiplicación de %i * %i = %i", o1, o2, o1*o2);
+          case '3': printf("\n Multiplicación de %i * %i = %i", o1, o2, o1*o2);
                     break;
-          case '/': printf("\n División de %i / %i = %i y el resto es: %i", o1, o2, o1/o2, o1%o2);
+          case '4': printf("\n División de %i / %i = %i y el resto es: %i", o1, o2, o1/o2, o1%o2);
                     break;
-          case '1': printf("\n El cuadrado de %i es  %i y el cuadrado de %i es %i", o1, o1*o1, o2, o2*o2);
+          case '5': printf("\n %i elevado a %i es %i", o1,  o2, o2*o2);
                     break;
-          default: printf("\n Esa operación no está permitida. Introduce otra operación (+-*/):");
+          default: printf("\n Esa operación no está permitida. Introduce otra operación:");
+                   printf("\n\t 1.-SUMA");
+                   printf("\n\t 2.-RESTA");
+                   printf("\n\t 3.-MULTIPLICACIÓN");
+                   printf("\n\t 4.-DIVISIÓN");
+                   printf("\n\t 5.-CUADRADO");
+
                    scanf (" %c", &op);
                    break;
       }
-    }while(op!='+' && op!='-' && op!='*' && op!='/' && op!='1');
+    }while(op!='1' && op!='2' && op!='3' && op!='4' && op!='5');
     printf("\n Quieres hacer otra operación? (S/N):");
     scanf(" %c", &aux);
     switch(aux){
@@ -52,12 +57,6 @@ int main(){
                   break;
     }
     system("clear");
-    for(i=0;i<50;i++){
-        printf("-");
-    }
-    printf("\n GRACIAS POR UTILIZAR LA CALCULADORA \n");
-    for(i=0;i<50;i++){
-        printf("-");
-    }
+    system("toilet --gay --fblocks GRACIAS POR UTILIZAR LA CALCULADORA");
     return EXIT_SUCCESS;
 }
