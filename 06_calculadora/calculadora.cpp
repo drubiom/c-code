@@ -5,7 +5,7 @@ int main(){
     int i, o1, o2;
     char op, aux;
     system("clear");
-    system("toilet --gay --fblocks CALCULADORA BÁSICA");
+    system("toilet --gay CALCULADORA BÁSICA");
 
     printf("\nIntroduce el primer número:");
     scanf(" %i", &o1);
@@ -57,6 +57,6 @@ int main(){
                   break;
     }
     system("clear");
-    system("toilet --gay --fblocks GRACIAS POR UTILIZAR LA CALCULADORA");
+    system("toilet --gay GRACIAS POR UTILIZAR LA CALCULADORA");
     return EXIT_SUCCESS;
 }
