@@ -6,15 +6,14 @@
 
 int main(){
     int resto, numero;
-    char letra[FILAS] = {'T','R','W','A','G','M','Y','F','P','D','X','B','N','J','Z','S','Q','V','H','L','C','K','E'};
-
+    char letra [] = "TRWAGMYFPDXBNJZSQVHLCKE";
     do{
     printf("Introduce el número de DNI: (sin ceros delante)");
-    scanf(" %s", &numero);
+    scanf(" %i", &numero);
     }while(numero < 0 || numero > 99999999);
+
     //¿Quitar ceros a la izquierda?
-    resto = numero % 23;
-    printf("\n La letra del DNI es: %c\n", letra[resto]);
+    printf("\n La letra del DNI es: %c\n", letra[numero % 23]);
 
     return EXIT_SUCCESS;
 }
