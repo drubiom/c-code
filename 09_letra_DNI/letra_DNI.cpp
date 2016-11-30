@@ -2,11 +2,10 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define FILAS 24
-
 int main(){
     int resto, numero;
     char letra [] = "TRWAGMYFPDXBNJZSQVHLCKE";
+
     do{
     printf("Introduce el número de DNI: (sin ceros delante)");
     scanf(" %i", &numero);
