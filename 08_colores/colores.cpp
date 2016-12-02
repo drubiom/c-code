@@ -59,30 +59,22 @@ int main(){
       }
     }while(opc != 's' && opc != 'S' && opc != 'N' && opc != 'n');
     printf("\n El color que estás viendo es ");
-    if(rojo == 1){
-        if(amarillo == 1){
-            if(azul == 1){
-                printf("NEGRO");
-            }
+    if(rojo)
+        if(amarillo)
+            if(azul)
+                printf("\e[0;37;mBLANCO\e[0m");
             else printf("\e[01;38;5;208mNARANJA\e[0m");
-        }
-        else if(azul == 1){
+        else if(azul)
             printf("\e[0;35mMORADO\e[0m");
-        }
         else printf("\e[0;31mROJO\e[0m");
-    }
-    else{
-        if(amarillo == 1){
-            if(azul == 1){
+    else
+        if(amarillo)
+            if(azul)
                printf("\e[0;32mVERDE\e[0m");
-            }
             else printf("\e[1;33mAMARILLO\e[0m");
-        }
-        else if(azul == 1){
+        else if(azul)
             printf("\e[0;34mAZUL\e[0m");
-       }
-        else printf("\e[0;37;mBLANCO\e[0m");
-    }
+        else printf("\eNEGRO");
     printf("\n");
    return EXIT_SUCCESS;
 }
