@@ -8,6 +8,6 @@ int main(int argc, char *argv[]){
         return EXIT_FAILURE;
     veces = atoi(argv[2]);
     for (int i = 0; i < veces; i++)
-        printf("Hola, %s\n", argv[1]);
+        printf("Hola, %s \a\n", argv[1]);
     return EXIT_SUCCESS;
 }
