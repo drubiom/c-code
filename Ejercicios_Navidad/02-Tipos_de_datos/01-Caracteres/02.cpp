@@ -11,6 +11,10 @@ int main(){
     char palabra[] = "Hola Caracola";
     printf("La cadena codificada es: ");
     while(palabra[i] != 0){
+        if((palabra[i] > 87 && palabra[i] < 91) || (palabra[i] > 119 && palabra[i] < 123))
+            palabra[i] -= 23;
+        else if (palabra[i] == 32);
+        else
         palabra[i] += 3;
         printf("%c", palabra[i]);
         i++;

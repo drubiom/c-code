@@ -1,0 +1,3 @@
+Este es el texto a imprimir desde un fichero para el ejercicio 4.
+[hola dfgds]
+[asdfasdfasdfadsf sefsef]
