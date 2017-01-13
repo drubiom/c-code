@@ -5,12 +5,15 @@
 //Dado un numero entero invierte sus dígitos en otra variable. Ej: 731 => 137. La cantidad de dígitos es variable.
 
 int main(){
-    int numero[20], i = 0;
+    char numero[20];
+    int i = 0;
     printf("Introduce numero\n");
-    scanf(" %i", numero);
-    for(i; numero[i] != '\0'; i++)
-        printf("%i", i);
+    scanf(" %s", numero);
+    for(i; numero[i] != '\0' ; i++)
+        printf(" ");
+    printf("\n");
     for(i; i >= 0; i--)
-        printf("%i", numero[i]);
+        printf("%c", numero[i]);
+    printf("\n");
     return EXIT_SUCCESS;
 }
