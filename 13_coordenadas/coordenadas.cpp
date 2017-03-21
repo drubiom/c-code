@@ -25,13 +25,8 @@ int main(int argc, char const *argv[])
 
 TCoordenadas cambiarcoordenadas(TCoordenadas coord){
 	TCoordenadas temp;
-	if (coord.x == 0)
-		temp.y = 0;
-	if (coord.y == 0)
-		temp.x = 0;
-	else{
-		temp.x = coord.y + N;
-		temp.y = coord.x + N;
+		temp.x = coord.y * N;
+		temp.y = coord.x * N;
 	}
 	return temp;
 }
