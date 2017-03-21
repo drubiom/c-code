@@ -3,17 +3,18 @@
 #include <string.h>
 
 #define N 3
-#define M 3
+#define K 2
+#define M 4
 
 int main(){
-   int A[N][M] = { {3,2,6}, {5,9,1}, {3,4,4} }; 
-   int B[M][N] = { {6,3,9}, {1,2,1}, {2,2,8} };
-   int C[N][N];
+   int A[M][K] = { {3,2,6,7}, {5,9,1,-3} }; 
+   int B[K][N] = { {6,3}, {-2,1}, {2,-8} };
+   int C[M][N];
    
    bzero(C, sizeof(C));
-   for (int i = 0; i < N ; i++){
+   for (int i = 0; i < M ; i++){
    	for (int j = 0; j < N; j++){
-   		for (int k = 0; k < M; k++){
+   		for (int k = 0; k < K; k++){
    				C[i][j] += A[i][k] * B[k][j];
          }
    		printf("%i ", C[i][j]);
