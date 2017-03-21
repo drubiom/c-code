@@ -27,6 +27,5 @@ TCoordenadas cambiarcoordenadas(TCoordenadas coord){
 	TCoordenadas temp;
 		temp.x = coord.y * N;
 		temp.y = coord.x * N;
+		return temp;
 	}
-	return temp;
-}
